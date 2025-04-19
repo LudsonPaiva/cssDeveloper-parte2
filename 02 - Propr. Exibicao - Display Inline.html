@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade de exibição - Display Inline</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+        .exemplo {
+            background-color: palevioletred;
+        }
+        /*o display inline não aceita as propriedades height e width*/
+        .exemplo inline {
+            color: white;
+            width: 300px;
+            height: 300px;
+        }
+        /*
+        1) pode-se adicionar margens no display inline, mas apenas na horizontal
+        2) o padding, até altera o elemento, mas não altera no texto a margem na vertical
+        */
+        #b1 {
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <h2>Exemplos:</h2>
+
+    <code>display: block;</code>
+    <br><br>
+
+    <div class="exemplo">Exemplo 01</div>
+    <div class="exemplo">Exemplo 02</div>
+
+    <br><br>
+    <code>display: inline</code>
+    <br><br>
+
+    <span class="exemplo">Exemplo inline 01</span>
+    <span class="exemplo">Exemplo inline 02</span>
+    <!-- atalho. em.exemplo cria o elemento <em class="exemplo"></em>-->
+    <em class="exemplo">Exemplo inline 03</em>
+    <b class="exemplo">Exemplo Inline 04</b>
+
+    <br><br>
+    <p>* o display inline não aceita as propriedades height e width</p>
+    <!--um elemento pode ter mais de uma classe-->
+    <span class="exemplo inline">Exemplo inline 05</span>
+    <em class="exemplo inline">Exemplo inline 06</em>
+
+    <p>Lorem ipsum dolor <b class="exemplo" id="b1">sit amet consectetur</b> adipisicing elit. Fugit, unde eius ratione ipsam ad laboriosam voluptas eum. Quod dolorum atque soluta ut? Exercitationem consectetur aliquid adipisci consequuntur illum. Fuga, at?</p>
+
+    <p>* transformando um display block em um display inline</p>
+    <p class="exemplo" style="display: inline;">Exemplo 08</p>
+</body>
+</html>

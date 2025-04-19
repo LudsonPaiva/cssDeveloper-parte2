@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades de exibição - Display Block</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+        .exemplo {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <h2>Exemplos:</h2>
+
+    <code>display: block;</code>
+    <br><br>
+    <p>* o div e o p já vem por padão em bloco</p>
+    <div class="exemplo">Exemplo 01</div>
+    <p class="exemplo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quos voluptates consectetur soluta reiciendis fugit ex facere quisquam. Sequi quidem, harum odit assumenda non excepturi obcaecati repellat consequuntur veritatis quae.
+    </p>
+    <p>* Não tem como padrão o valor como block</p>
+    <p>* Os divs por serem blocks ficam um em baixo do outro, os spans por não serem, ficam lado a lado enquanto couber</p>
+    <span class="exemplo">Exemplo 03</span>
+    <span class="exemplo">Exemplo 04</span>
+
+    <p>* Transforma um span como block</p>    
+    <span class="exemplo" style="display: block;">Exemplo 05</span>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display None Vs Visibilidade Hodden</title>
+    <style>
+        body {
+            font-family: roboto, sans-serif;
+        }
+        .exemplo {
+            background-color: palevioletred;
+        }
+
+        #item-02 {
+            display: none;
+        }
+        /*hidden: não só oculta, mas mantém o espaço que o elemento ocupa, diferente do none*/
+        #item-05 {
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>display: none vs visibility: hidden</h1>
+
+    <div>
+        <span id="item-01" class="exemplo">Item 01</span>
+        <span id="item-02" class="exemplo">Item 02</span>
+        <span id="item-03" class="exemplo">Item 03</span>
+    </div>   
+    <br><br>
+    <div>
+        <span id="item-04" class="exemplo">Item 04</span>
+        <span id="item-05" class="exemplo">Item 05</span>
+        <span id="item-06" class="exemplo">Item 06</span>
+    </div> 
+</body>
+</html>

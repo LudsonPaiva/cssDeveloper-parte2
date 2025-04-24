@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - shorthand flex</title>
+    <style>
+        /*
+        flex: 
+           - shorthand que permite trabalhar em conjunto com flex-grow, flex-shrink, flex-basis "nesta ordem"
+
+           valores pré definidos de flex:
+           - initial = flex: 0 1 auto;
+           - auto = flex: 1 1 auto;
+           - none = flex: 0 0 auto;
+           - 1 = flex: 1 1 0;
+           - 2 = flex: 2 1 0;
+
+           */
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 500px;
+            height: 200px;
+
+            /*flex container props*/
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        #container-01 {
+            flex-direction: column;
+        }
+
+        /*
+        Ex flex:
+            flex: <grow> <shrink> <basis>
+            flex-grow, 1 = cresce para distribuir o espaço
+            flex-shrink, 1 = reduz para os itens caberem
+            flex-basis auto = começa com o tamanho do conteúdo do item
+        */
+        .item {
+            background: yellow;
+            text-align: center;
+            flex: 1 1 auto;
+        }
+        #item-2 {
+            flex: 2;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container" id="container-01">
+        <div class="item"id="item-1">Item 01</div>
+        <div class="item"id="item-2">Item 02</div>
+        <div class="item"id="item-3">Item 03</div>
+
+    </div>
+    <div class="container" id="container-02">
+        <div class="item"id="item-1">Curto</div>
+        <div class="item"id="item-2">Texto médio</div>
+        <div class="item"id="item-3">Texto muito longo</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Justify-content</title>
+    <style>
+        /*
+        alighn-iten: Alinhando elementos no eixo TRANSVERSAL
+        - flex-start
+        - flex-end - Alinha no fim da direção que definimos
+        - center
+        - space-between - Itens distribuidos de forma uniforme (1º e último não tem espaço)
+        - space-around - Itens distribuídos de forma igual (1º e último não tem espaço com metade do valor)
+        - space-evenly - Itens distribuídos de forma igual 
+        */
+        .container {
+            background: palegreen;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+
+            display: flex;
+            justify-content: flex-end;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+
+        #container-01 {
+            flex-flow: row wrap;
+        }
+        
+        #container-02 {
+            flex-flow: column wrap-reverse;
+            height: 300px;
+            justify-content: space-evenly;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container" id="container-01">
+        <div class="item">Irem 01</div>
+        <div class="item">Irem 02</div>
+        <div class="item">Irem 03</div>
+
+    </div>
+    <div class="container" id="container-02">
+        <div class="item">Irem 01</div>
+        <div class="item">Irem 02</div>
+        <div class="item">Irem 03</div>
+
+    </div>
+</body>
+</html>

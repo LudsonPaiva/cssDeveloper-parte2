@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Ordenando Items com a propriedade Order</title>
+    <style>
+        /*order
+        */
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        /*GAP é melhor usar do que margin, pois dá para trabalhar de forma mais inteligente*/
+        .item {
+            background: yellow;
+            padding: 8px;
+        }
+
+        #container-01 {
+            flex-flow: row wrap;
+        }
+        
+        #container-02 {
+            flex-flow: column wrap;
+        }
+        /*todos os itens não ordenados terão ordem 0*/
+        #item-4 {
+            order: -1;
+        }
+        #item-9 {
+            order: -2;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container" id="container-01">
+        <div class="item"id="item-1">Item 01</div>
+        <div class="item"id="item-2">Item 02</div>
+        <div class="item"id="item-3">Item 03</div>
+        <div class="item"id="item-4">Item 04</div>
+        <div class="item"id="item-5">Item 05</div>
+        <div class="item"id="item-6">Item 06</div>
+        <div class="item"id="item-7">Item 07</div>
+        <div class="item"id="item-8">Item 08</div>
+        <div class="item"id="item-9">Item 09</div>
+        <div class="item"id="item-10">Item 10</div>
+
+    </div>
+    <div class="container" id="container-02">
+        <div class="item"id="item-1">Item 01</div>
+        <div class="item"id="item-2">Item 02</div>
+        <div class="item"id="item-3">Item 03</div>
+        <div class="item"id="item-4">Item 04</div>
+        <div class="item"id="item-5">Item 05</div>
+        <div class="item"id="item-6">Item 06</div>
+        <div class="item"id="item-7">Item 07</div>
+        <div class="item"id="item-8">Item 08</div>
+        <div class="item"id="item-9">Item 09</div>
+        <div class="item"id="item-10">Item 10</div>
+
+    </div>
+</body>
+</html>

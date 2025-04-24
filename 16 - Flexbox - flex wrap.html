@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Flex Wrap</title>
+    <style>
+        /*
+        Flex wrap: Quebra de linhas e colunas
+        - wrap
+        - wrap-reverse
+        */
+        .container {
+            background: palegreen;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+
+        #container-01 {
+            flex-direction: row;
+        }
+        
+        #container-02 {
+            flex-direction: column;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container" id="container-01">
+        <div class="item">Irem 01</div>
+        <div class="item">Irem 02</div>
+        <div class="item">Irem 03</div>
+        <div class="item">Irem 04</div>
+        <div class="item">Irem 05</div>
+        <div class="item">Irem 06</div>
+        <div class="item">Irem 07</div>
+        <div class="item">Irem 08</div>
+    </div>
+    <div class="container" id="container-02">
+        <div class="item">Irem 01</div>
+        <div class="item">Irem 02</div>
+        <div class="item">Irem 03</div>
+        <div class="item">Irem 04</div>
+        <div class="item">Irem 05</div>
+        <div class="item">Irem 06</div>
+        <div class="item">Irem 07</div>
+        <div class="item">Irem 08</div>
+        <div class="item">Irem 09</div>
+        <div class="item">Irem 10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - flex-shrink</title>
+    <style>
+        /*
+        flex-shrink: 
+           - controla o quanto um item pode diminuir para caber em um container
+           - se o container não possuir espaço, os itens vão diminuir para caber
+           */
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 200px;
+
+            display: flex;
+            gap: 10px;
+        }
+        
+        .item {
+            background: yellow;
+            padding: 8px;
+            width: 50px;
+            height: 50px;
+            min-width: 30px; /*não diminuirá mais de 30px*/
+
+            /*flex container props*/
+            flex-shrink: 1;
+            
+        }
+        #container-01 {
+            flex-flow: row nowrap;
+        }
+
+        #container-02 {
+            flex-flow: column nowrap;
+        }
+        #item-3 {
+            flex-shrink: 4;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container" id="container-01">
+        <div class="item"id="item-1">Item 01</div>
+        <div class="item"id="item-2">Item 02</div>
+        <div class="item"id="item-3">Item 03</div>
+        <div class="item"id="item-4">Item 04</div>
+        <div class="item"id="item-5">Item 05</div>
+        <div class="item"id="item-6">Item 06</div>
+        <div class="item"id="item-7">Item 07</div>
+    </div>
+    <div class="container" id="container-02">
+        <div class="item"id="item-1">Item 01</div>
+        <div class="item"id="item-2">Item 02</div>
+        <div class="item"id="item-3">Item 03</div>
+        <div class="item"id="item-4">Item 04</div>
+        <div class="item"id="item-5">Item 05</div>
+        <div class="item"id="item-6">Item 06</div>
+        <div class="item"id="item-7">Item 07</div>
+    </div>
+</body>
+</html>

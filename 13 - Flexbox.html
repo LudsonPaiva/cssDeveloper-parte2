@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        /*Flexbox (Flexible bod module):
+        Permite posicionar os elementos dentro de outro elemento (Container).
+
+        - flex: um conteiner am baixo do outro
+        - inline flex: se couber, coloca um container do lado do outro
+
+        - Eixo principal (main axis) define a direção. Se horizontal ou vertical;
+        - Eixo transversal (cros axis) é perpendicular ao eixo principal.
+        */
+        .container {
+            background: palegreen;
+            padding: 20px;
+            display: inline-flex;
+        }
+        .item {
+            background: orange;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="item">Irem 01</div>
+        <div class="item">Irem 02</div>
+        <div class="item">Irem 03</div>
+        <div class="item">Irem 04</div>
+        <div class="item">Irem 05</div>
+        <div class="item">Irem 06</div>
+        <div class="item">Irem 07</div>
+        <div class="item">Irem 08</div>
+    </div>
+    <div class="container">
+        <div class="item">Irem 01</div>
+        <div class="item">Irem 02</div>
+        <div class="item">Irem 03</div>
+        <div class="item">Irem 04</div>
+        <div class="item">Irem 05</div>
+        <div class="item">Irem 06</div>
+        <div class="item">Irem 07</div>
+        <div class="item">Irem 08</div>
+    </div>
+</body>
+</html>

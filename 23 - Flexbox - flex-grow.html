@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - flex-grow</title>
+    <style>
+        /*
+        flex-grow: 
+            - Dá capacidade para o item crescer dentro do seu eixo principal. 
+            - Eles tentam seguir de forma proporcional
+            - Representam uma fração do espaço disponível
+        * números negativos não são aceitos
+        - flex-grow: 1; - todos ocupam o mesmo tamanho
+        - flex-grow: 2; - ocupa o dobro do espaço dos outros items
+        */
+        .container {
+            background: blueviolet;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 200px;
+
+            /*flex container props*/
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .item {
+            background: yellow;
+            padding: 8px;
+            flex-grow: 1;
+        }
+
+        #container-02 {
+            flex-direction: column;
+        }
+
+
+        #item-2 {
+            flex-grow: 2;
+            max-width: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div class="container" id="container-01">
+        <div class="item"id="item-1">Item 01</div>
+        <div class="item"id="item-2">Item 02</div>
+        <div class="item"id="item-3">Item 03</div>
+
+    </div>
+    <div class="container" id="container-02">
+        <div class="item"id="item-1">DIO</div>
+        <div class="item"id="item-2">Bem-vindo</div>
+        <div class="item"id="item-3">Trilha de CSS</div>
+
+    </div>
+</body>
+</html>

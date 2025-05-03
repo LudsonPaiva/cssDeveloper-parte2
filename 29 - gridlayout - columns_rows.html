@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+            height: 500px;
+
+            display: grid; /*propriedade*/
+            /***grid-template-columns:***/
+            /*A) grid-template-columns: 200px 200px 200px;*/ /* define a quantidade de colunas e suas larguras*/
+            /*B) grid-template-columns: 1fr 1fr 1fr;*/ /*fr = unidade de medida que representa uma fração*/
+            /*C) grid-template-columns: repeat(4, 1fr); */ /*função repeat*/
+            grid-template-columns: 100px repeat(3, 1fr) 100px; /*definições diferentes para a primeira e última coluna*/
+
+            grid-template-rows: 2fr 1fr; /* C) O fr no rows precisa da definição do height*/
+        }
+        .item {
+            border: 1px solid black;
+        }
+        .item-01 {
+            background-color: palevioletred;
+        }
+        .item-02 {
+            background-color: cornflowerblue;
+        }
+        .item-03 {
+            background-color: palegreen;
+        }
+        .item-04 {
+            background-color: orange;
+        }
+        .item-05 {
+            background-color: cadetblue;
+        }
+        .item-06 {
+            background-color: aqua;
+        }
+        .item-07 {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 02</div>
+        <div class="item item-03">Item 03</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+        <div class="item item-07">Item 07</div>
+    </div>
+    
+</body>
+</html>
+
+*parei em 18:24

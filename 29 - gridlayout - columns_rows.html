@@ -13,10 +13,35 @@
 
             display: grid; /*propriedade*/
             /***grid-template-columns:***/
-            /*A) grid-template-columns: 200px 200px 200px;*/ /* define a quantidade de colunas e suas larguras*/
-            /*B) grid-template-columns: 1fr 1fr 1fr;*/ /*fr = unidade de medida que representa uma fração*/
-            /*C) grid-template-columns: repeat(4, 1fr); */ /*função repeat*/
-            grid-template-columns: 100px repeat(3, 1fr) 100px; /*definições diferentes para a primeira e última coluna*/
+
+            /*A) define a quantidade de colunas e suas larguras*/
+            /*grid-template-columns: 200px 200px 200px;*/ 
+            
+            /*B) fr = unidade de medida que representa uma fração*/
+            /* grid-template-columns: 1fr 1fr 1fr;*/ 
+            
+            /*C) função repeat*/
+            /* grid-template-columns: repeat(4, 1fr); */
+            
+            /*D) definições diferentes para a primeira e última coluna*/
+            /* grid-template-columns: 100px repeat(3, 1fr) 100px; */ 
+
+            /*E) repeats com repetições diferentes            */
+            /* grid-template-columns: 100px repeat(3, 1fr 2fr) 100px; */
+
+            /*F) palavras chave
+            - auto-fill = repete o máximo de COLUNAS que couber ex.: grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            - auto-fit = se não houver mais itens ele não reepete
+            */
+            grid-template-columns: repeat(auto-fill, 100px);
+            
+            /*G) 
+            - min content = cria colunas com o tamanho mínimo dos conteúdos que temos considerando a maior palavra
+            - max-content = cria colunas com o tamanho mínimo dos conteúdos que temos considerando a maior frase
+            - auto = fr. Podendo se repetir = auto, auto, auto
+            */
+            /*grid-template-columns: min-content;*/
+
 
             grid-template-rows: 2fr 1fr; /* C) O fr no rows precisa da definição do height*/
         }
@@ -59,5 +84,3 @@
     
 </body>
 </html>
-
-*parei em 18:24

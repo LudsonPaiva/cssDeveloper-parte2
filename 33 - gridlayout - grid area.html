@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+
+        /*
+        grid area: 
+        - Junção das propriedades anteriores = 
+        <grid-row-start><grid-column-start><grid-row-end><grid-column-endd>
+        - nomear as áreas
+        */
+        .container {
+            border: 2px solid black;
+
+            display: grid;
+            grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr;
+            grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim] 100px;
+        }
+        .item {
+            text-align: center;
+            background-color: deeppink;
+        }
+        .selected {
+            background-color: aqua;
+            /*grid-column: segunda-linha-column / terceira-linha-column;
+            grid-row: linha-meio / linha-fim;*/
+
+            grid-area: linha-meio / segunda-linha-col / linha-fim / terceira-linha-col;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="selected">1</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    
+</body>
+</html>
+

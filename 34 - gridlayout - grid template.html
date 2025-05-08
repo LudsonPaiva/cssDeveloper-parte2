@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+
+        /*
+        grid area: 
+        - Junção das propriedades anteriores = 
+        <grid-row-start><grid-column-start><grid-row-end><grid-column-endd>
+        - nomear as áreas
+        */
+
+        body {
+            display: grid;
+            /*
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+            */
+
+            /*grid-template: repeat(3, 200px) / repeat(4, 1fr);*/ /*none = aplica os valores iniciais para as proprieedades grid template*/
+            grid-template: 
+            "header header header header" 100px
+            "main main . sidebar" 300px
+            "footer footer footer footer" 100px 
+            / 
+            1fr 3fr 1fr 1fr; /*neste formato, o grid-template-columns não aceeita o repeat.*/
+        }
+
+        .container {
+            border: 2px solid black;
+            display: grid;
+        }
+        header {
+            background-color: orange;
+            grid-area: header;
+        }
+        main {
+            background-color: deepskyblue;
+            grid-area: main;
+        }
+        aside {
+            background-color: lightcoral;
+            grid-area: sidebar;
+        }
+        footer {
+            background-color: yellowgreen;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        header
+    </header>
+    <main>
+        main
+    </main>
+    <aside>
+        sidebar
+    </aside>
+    <footer>
+        footer
+    </footer>
+
+</body>
+</html>
+
+

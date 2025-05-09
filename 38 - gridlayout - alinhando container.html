@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlayout</title>
+    <style>
+       /*
+       justify-content: Alinha o container de forma horizontal
+       - start
+       - center
+       - end
+       - stretch
+       - space-around = coloca espaços iguais entre as colunas e e xtremidades será 50%
+       - space-btween = coloca espaços iguais entre as colunas e e xtremidades será 0%
+       - space-evenli = coloca espaços iguais entre as colunas e e xtremidades
+
+       alighn-content: Alinha o container de forma vertical
+
+       place-content: shorthand <alighn-content> <justify-content>
+
+       */
+
+        body {
+            display: grid;
+            border: 3px solid;
+            height: 80vh;
+            grid-template: repeat(3, 100px) / repeat(3, auto);
+
+            place-items: center;
+            justify-content: space-between;
+            align-content: end;
+        }
+
+        .item-01 {
+            background-color: palegoldenrod;
+        }
+        .item-02 {
+            background-color: paleturquoise;
+        }
+        .item-03 {
+            background-color: palegreen;
+        }
+        .item-04 {
+            background-color: palevioletred;
+        }
+        .item-05 {
+            background-color: lightseagreen;
+        }
+        .item-06 {
+            background-color: plum;
+        }
+        .item-07 {
+            background-color: limegreen;
+        }
+        .item-08 {
+            background-color: lightsalmon;
+        }
+        .item-09 {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="item-01">Ana Paula</div>
+    <div class="item-02">Rebeca Lopes Oliveira</div>
+    <div class="item-03">Pedro Jacinto</div>
+    <div class="item-04">André Gomes</div>
+    <div class="item-05">Alice Pereira Andrade</div>
+    <div class="item-06">Camila Gonçalves</div>
+    <div class="item-07">Sofia Antonieta</div>
+    <div class="item-08">Kaio Ribeiro</div>
+    <div class="item-09">Michele Ambrosio</div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renderização</title>
+    <style>
+        /*Estrutura das media queries
+        @media screen (min-width:320 px) and (max-width: 768px)
+        AT-RULE | MEDIA TYPE | MEDIA FEATURE | OPERATOR | MEDIA FEATURE
+        {
+            ...
+        }
+        AT-RULE: Identifica o tipo de mídia
+        MEDIA TYPE: Define o tipo de mídia: 
+            - all: todos os dispositivos
+            - print: pré-visualização de impressão
+            - screen: dispositivos com telas integradas
+            - speech: dispositivos qque leem conteúdos audíveis
+        MEDIA FEATURES: 
+        - min-width/min-height/max-width/max-height/width/height
+        - orientation: identifica se paisagem
+        - hover: se acesso com ponteiro do mouse
+        - pointer: se onteiro do mouse é fino ou grosso, ajuda a detectar touch
+        */
+        @media print {
+            body {
+                background-color: black;
+                color: white;
+            }
+            p {
+                color: blanchedalmond;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p><b>To understand this exemple, you should open this pagee on a phone os tablet.</b></p>
+
+    <img src="assets/images/image 16.svg" alt="">
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus ducimus accusamus quasi itaque? Possimus blanditiis quis, asperiores ipsum eveniet unde incidunt totam facere qui natus saepe impedit. Qui, atque laboriosam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sint animi quas facilis quia rerum dolor numquam dolores debitis, eveniet adipisci dolore accusamus praesentium, eos soluta laudantium natus iusto dignissimos.
+    Ipsum vitae est nemo culpa maiores. Vitae repellat optio numquam sint fuga repudiandae nisi distinctio voluptates, tempora ratione fugit, facere assumenda! Ut nostrum consectetur quibusdam tempore maxime nulla placeat natus?
+    Facere sunt, at aut cum debitis corporis possimus odit fugit explicabo suscipit iusto eius fuga quidem aperiam voluptatum accusamus blanditiis assumenda cumque incidunt inventore esse alias deserunt. Incidunt, cumque quam?</p>
+    
+</body>
+</html>

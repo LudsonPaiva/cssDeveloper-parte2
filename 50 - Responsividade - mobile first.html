@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* MOBILE FIRST:
+        - Exibição de tela: Configurar a view do mobile como padrão e as adaptações para o desktop
+        - Não carregar estilos de desktop para os mobiles
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav li {
+            background-color: lightgreen;
+            padding: 8px;
+            border-radius: 4px;
+            list-style: none;
+        }
+
+        #skills {
+            background-color: lightgreen;
+            border: 1px solid green;
+            border-radius: 4px;
+        }
+
+        #skills li {
+            list-style: decimal;
+        }
+        #education {
+            background-color: lightblue;
+            border: 1px solid blue;
+            border-radius: 4px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        @media screen and (min-width: 720px) {
+            main {
+                flex-direction: row;
+                gap: 24px;
+                max-width: 720px;
+                margin: 16px auto;
+                flex-wrap: wrap;
+            }
+
+            #presentation {
+                flex-basis: 500px;
+            }
+
+            #skills, #education {
+                flex: 1;
+            }
+
+            nav ul {
+                flex-direction: row;
+            }
+
+            nav ul li {
+                flex: 1;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Conheça meu trabalho</a></li>
+                <li><a href="#">Linkedin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentation">
+            <h1>Michele Ambrósio</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, deserunt. Dicta, sapiente sunt laboriosam amet impedit suscipit quasi sed odit ullam iusto quis nemo rem voluptatem vitae rerum tenetur dolor?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, deserunt. Dicta, sapiente sunt laboriosam amet impedit suscipit quasi sed odit ullam iusto quis nemo rem voluptatem vitae rerum tenetur dolor?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, deserunt. Dicta, sapiente sunt laboriosam amet impedit suscipit quasi sed odit ullam iusto quis nemo rem voluptatem vitae rerum tenetur dolor?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, deserunt. Dicta, sapiente sunt laboriosam amet impedit suscipit quasi sed odit ullam iusto quis nemo rem voluptatem vitae rerum tenetur dolor?</p>
+        </section>
+        <section id="skills">
+            <ul>
+                <li>HTML</li>
+                <li>css</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>C++</li>
+            </ul>
+        </section>
+        <section id="education">
+            <ul>
+                <li>Técnico de informática</li>
+                <li>Ciênia da computação</li>
+                <li>Pós ...</li>
+            </ul>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        /*max-width = a imagem se adaptará ao tamanho da tela, e não se extenderá ao seu tamanho original, por isso não usamos somente o width. Se usar o width, pode pixelizar, cuidado.*/
+        /*
+        img {
+            max-width: 100%;
+        }
+        */
+
+        /*OPÇÃO 2*/
+        .image-container {
+            border: 2px solid red;
+            height: 500px;
+            width: 100%;
+
+            background-image: url('assets/images/image_16.svg');
+        }
+
+        @media screen and (max-width: 690px) {
+            .image-container {
+                background-image: url('assets/images/logo-dio.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <p><b>To understand this exemple, you should open this page on a phone os tablet.</b></p>
+
+    <div class="image-container">
+        <img src="assets/images/alergias-alimentares-sintomas-tratamento-1.jpg.webp" alt="">
+    </div>
+
+    <!--ALTERNANDO TAMANHO DE IMAGENS NO HTML-->
+    <picture>
+        <source srcset="assets/images/image_16.svg" media="(max-width: 680px)">
+        <source srcset="assets/images/logo-dio.jpg">
+        <img src="assets/images/alergias-alimentares-sintomas-tratamento-1.jpg.webp" alt="">
+    </picture>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus ducimus accusamus quasi itaque? Possimus blanditiis quis, asperiores ipsum eveniet unde incidunt totam facere qui natus saepe impedit. Qui, atque laboriosam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sint animi quas facilis quia rerum dolor numquam dolores debitis, eveniet adipisci dolore accusamus praesentium, eos soluta laudantium natus iusto dignissimos.
+    Ipsum vitae est nemo culpa maiores. Vitae repellat optio numquam sint fuga repudiandae nisi distinctio voluptates, tempora ratione fugit, facere assumenda! Ut nostrum consectetur quibusdam tempore maxime nulla placeat natus?
+    Facere sunt, at aut cum debitis corporis possimus odit fugit explicabo suscipit iusto eius fuga quidem aperiam voluptatum accusamus blanditiis assumenda cumque incidunt inventore esse alias deserunt. Incidunt, cumque quam?</p>
+    
+</body>
+</html>

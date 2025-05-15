@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        /*o vw representa 1% da minha viewport. Sendo assim, quando aumenta a tela ele aumenta... é um problema para quem utilizar zoom, pois não aumenta a fonte. para resolver isso, utiliza-se a função calc*/
+        h1 {
+            font-size: 2rem;
+        }
+
+        @media screen and (max-width: 680px) {
+            h1 {
+                font-size: calc(1.5rem + 3vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Trilha CSS</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem corrupti quas, quasi laboriosam consequatur praesentium. Reiciendis maxime dicta quo nobis ducimus suscipit eaque sint id cumque maiores, tenetur facilis ad.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem corrupti quas, quasi laboriosam consequatur praesentium. Reiciendis maxime dicta quo nobis ducimus suscipit eaque sint id cumque maiores, tenetur facilis ad.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem corrupti quas, quasi laboriosam consequatur praesentium. Reiciendis maxime dicta quo nobis ducimus suscipit eaque sint id cumque maiores, tenetur facilis ad.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem corrupti quas, quasi laboriosam consequatur praesentium. Reiciendis maxime dicta quo nobis ducimus suscipit eaque sint id cumque maiores, tenetur facilis ad.</p>
+    
+</body>
+</html>

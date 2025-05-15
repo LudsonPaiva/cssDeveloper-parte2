@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+
+    <!--APLICANDO DIRETO NO HTML
+    *** Colocar uma condição na tag style do html.
+    *** Também dá para aplicar através do JavaScript -> https://css-tricks.com/working-with-javascript-media-queries/
+
+    BREAKPOINTS
+    - x-small - none
+    - small - sm
+    - medium - md
+    - large - lg
+    - extra large - xl
+    - extra extra large - xxl
+    -->
+    <style media="screen and (max-width:500px)">
+        
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 60px;
+            text-align: center;
+        }
+
+        header h2 {
+            font-size: 1rem;  /*em layouts responsivos é melhor utilizar rem*/
+            font-weight: normal; /*retirar o negrito*/
+        }
+
+        main {
+            padding: 30px;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto; /*centralizar automaticamente o conteúdo principal ao centro*/
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        .details {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: lightblue;
+            padding: 16px;
+            border-radius: 4px;
+        }
+
+        .image-card {
+            background-color: lightblue;
+            border: 1px solid #e2e2e2;
+            padding: 10px;
+            flex-basis: 200px;
+        }
+
+        .image-card img{
+            width: 100%;
+            
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laytouts Flexíveis</h1>
+        <h2>Exemplo de layouts flexíveis utilizando Flexbox</h2>
+    </header>
+    <main>
+        <section>
+            <h3>Saiba mais</h3>
+            <div class="details">
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur tempore omnis, explicabo ut suscipit. Nisi illo officia dolor ducimus, reiciendis, laudantium consequatur quam debitis delectus sequi repellat aliquam porro.</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur tempore omnis, explicabo ut suscipit. Nisi illo officia dolor ducimus, reiciendis, laudantium consequatur quam debitis delectus sequi repellat aliquam porro.</div>
+                <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur tempore omnis, explicabo ut suscipit. Nisi illo officia dolor ducimus, reiciendis, laudantium consequatur quam debitis delectus sequi repellat aliquam porro.</div>
+            </div>
+        </section>
+        <!--unsplash = serviço de imagenss para testes-->
+        <section>
+            <h3>Galeria de Imagens</h3>
+            <div class="gallery">
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+                <div class="image-card">
+                    <img src="https://source.unsplash.com/random/300x300" alt=""> <!--não funcionou-->
+                    <img src="assets/images/image 16.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
